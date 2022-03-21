@@ -31,11 +31,12 @@ class Loss:
 
 class Tanh(Layer):
     def forward(self, x: np.ndarray) -> np.ndarray:
-        ## Implement
-
+        
         result = np.tanh(x)
+        
+        #Alternatively
         #result = (np.exp(x) - np.exp(-x)) / (np.exp(x) + np.exp(-x))
-        ## End
+        
         self.saved_variables = {
             "result": result
         }
